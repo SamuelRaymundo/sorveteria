@@ -1,7 +1,8 @@
 import './App.css';
 import NavBar from './components/navBar/NavBar';
 import Home from './components/pages/Home';
-import LogIn from './components/pages/LogIn';
+import LogIn from './components/logIn/LogIn';
+import PJRegister from './components/logIn/PJRegister';
 import Products from './components/pages/Products';
 
 function App() {
@@ -17,11 +18,14 @@ function App() {
     case "/product":
       component = <Products />;
       break;
+    case "/pjregister":
+      component = <PJRegister/>;
+      break;  
   }
 
   return (
     <div className="app">
-      <NavBar />
+      <NavBar/>
       {component}
     </div>
   );
