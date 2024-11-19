@@ -1,18 +1,16 @@
-import "./NavBar.css"
-
+import "./NavBar.css";
 
 const NavBar = () => {
   return (
-    <nav className="nav-bar">
+    <nav className="nav">
+      <div className="site-title">MySite</div>
       <ul>
-          <li>
-              <a href="/">Home</a>
-              <a href="/login">Log In</a>
-              <a href="/product">Products</a>
-          </li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/login">Log In</a></li>
+        <li><a href="/product">Products</a></li>
       </ul>
     </nav>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;
