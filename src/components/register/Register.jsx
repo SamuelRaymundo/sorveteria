@@ -9,7 +9,7 @@ const Register = () => {
   const [address, setAddress] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-  const [statusCpf, setStatusCpf] = useState("Não verificado");
+
 
   const clearInputs = () => {
     setName("");
@@ -18,7 +18,7 @@ const Register = () => {
     setAddress("");
     setEmail("");
     setPhone("");
-    setStatusCpf("Não verificado");
+    ("Não verificado");
   };
 
   const validarCpf = async () => {
@@ -26,16 +26,13 @@ const Register = () => {
       const url = `https://api.invertexto.com/v1/validator?token=15763%7C3An2WSJwxe18y0whxntzgPyVpIsY6afK&value=${cpf}`;
       const response = await axios.get(url);
       if (response.data.valid) {
-        setStatusCpf("Válido");
         return true;
       } else {
-        setStatusCpf("Inválido");
         return false;
       }
     } catch (error) {
       console.error("Erro ao validar o CPF:", error);
-      setStatusCpf("Erro na validação");
-      return false;
+      ("Erro na validação");      return false;
     }
   };
 
@@ -82,12 +79,15 @@ const Register = () => {
       phone
     }
 
+    console.log(formData );
+    
+
     alert("Formulário enviado com sucesso!");
     clearInputs();
   };
 
   return (
-    <div className="login-container">
+    <div className="register">
       <h1>Registre-se como Pessoa Física</h1>
       <form onSubmit={handleSubmit}>
         <label>

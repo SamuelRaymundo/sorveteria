@@ -83,7 +83,7 @@ const PJRegister = () => {
   };
 
   return (
-    <div className="login-container">
+    <div className="register">
       <h1>Registre-se como Pessoa Juridica</h1>
       <form onSubmit={handleSubmit}>
         <label>

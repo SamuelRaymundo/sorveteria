@@ -1,10 +1,12 @@
 import './App.css';
+
+//COMPONENTS
 import NavBar from './components/navBar/NavBar';
 import Home from './components/pages/Home';
-import LogIn from './components/logIn/Register';
-import PJRegister from './components/logIn/PJRegister';
+import PJRegister from './components/register/PJRegister';
 import Products from './components/pages/Products';
-import Register from './components/logIn/Register';
+import Register from './components/register/Register';
+import Footer from './components/footer/Footer';
 
 function App() {
   let component;
@@ -28,6 +30,7 @@ function App() {
     <div className="app">
       <NavBar/>
       {component}
+      <Footer/>
     </div>
   );
 }
