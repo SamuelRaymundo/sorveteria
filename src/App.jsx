@@ -1,9 +1,10 @@
 import './App.css';
 import NavBar from './components/navBar/NavBar';
 import Home from './components/pages/Home';
-import LogIn from './components/logIn/LogIn';
+import LogIn from './components/logIn/Register';
 import PJRegister from './components/logIn/PJRegister';
 import Products from './components/pages/Products';
+import Register from './components/logIn/Register';
 
 function App() {
   let component;
@@ -12,8 +13,8 @@ function App() {
     case "/":
       component = <Home />;
       break;
-    case "/login":
-      component = <LogIn />;
+    case "/register":
+      component = <Register/>;
       break;
     case "/product":
       component = <Products />;
