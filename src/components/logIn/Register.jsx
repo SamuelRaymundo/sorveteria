@@ -73,6 +73,15 @@ const Register = () => {
       return;
     }
 
+    const formData = {
+      name,
+      age,
+      cpf,
+      address,
+      email,
+      phone
+    }
+
     alert("Formulário enviado com sucesso!");
     clearInputs();
   };

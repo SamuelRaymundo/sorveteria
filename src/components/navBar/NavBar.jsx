@@ -6,7 +6,7 @@ const NavBar = () => {
       <div className="site-title">MySite</div>
       <ul>
         <li><a href="/">Home</a></li>
-        <li><a href="/register">Log In</a></li>
+        <li><a href="/register">Sign In</a></li>
         <li><a href="/product">Products</a></li>
       </ul>
     </nav>

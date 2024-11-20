@@ -3,7 +3,7 @@ import axios from "axios";
 
 const PJRegister = () => {
   const [name, setName] = useState("");
-  const [age, setAge] = useState("");
+  const [tipoEmpresa, setTipoEmpresa] = useState("");
   const [cnpj, setCnpj] = useState("");
   const [address, setAddress] = useState("");
   const [email, setEmail] = useState("");
@@ -12,8 +12,8 @@ const PJRegister = () => {
 
   const clearInputs = () => {
     setName("");
-    setAge("");
-    setCpf("");
+    setTipoEmpresa("");
+    setCnpj("");
     setAddress("");
     setEmail("");
     setPhone("");
@@ -46,16 +46,10 @@ const PJRegister = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!name || !age || !cpf || !address || !email || !phone) {
+    if (!name || !tipoEmpresa|| !cnpj || !address || !email || !phone) {
       alert("Por favor, preencha todos os campos.");
       return;
     }
-
-    if (isNaN(age) || age <= 0) {
-      alert("Idade deve ser um número positivo.");
-      return;
-    }
-
     if (!/^\d+$/.test(phone)) {
       alert("Telefone deve conter apenas números.");
       return;
@@ -72,6 +66,18 @@ const PJRegister = () => {
       return;
     }
 
+    const formData = {
+        name,
+        tipoEmpresa,
+        cnpj,
+        address,
+        email,
+        phone
+    }
+
+    console.log(formData);
+    
+
     alert("Formulário enviado com sucesso!");
     clearInputs();
   };
@@ -85,8 +91,15 @@ const PJRegister = () => {
           <input type="text" name="name" value={name} onChange={(e) => setName(e.target.value)} required />
         </label>
         <label>
-          Idade:
-          <input type="text" name="age" value={age} onChange={(e) => setAge(e.target.value)} required />
+            <span>Tipo da Empresa:</span>
+            <select name="tipoEmpresa"
+            onChange={(e) => setTipoEmpresa(e.target.value)}
+            value={tipoEmpresa}>
+                <option value="MEI">MEI</option>
+                <option value="LTDA">LTDA</option>
+                <option value="SS">SS</option>
+                <option value="SA">SA</option>
+            </select>
         </label>
         <label>
           CNPJ:
