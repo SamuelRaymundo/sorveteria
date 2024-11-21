@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import "./Register.css";
+import '../register/Register.css';
 import axios from "axios";
+import {useState} from "react";
 
 const Register = () => {
   const [name, setName] = useState("");
@@ -88,7 +88,7 @@ const Register = () => {
 
   return (
     <div className="register">
-      <h1>Registre-se como Pessoa Física</h1>
+      <h1>Crie sua conta</h1>
       <form onSubmit={handleSubmit}>
         <label>
           Nome:
@@ -116,8 +116,8 @@ const Register = () => {
         </label>
         <input type="submit" value="Registrar" />
         <p>
-          Registre-se como Pessoa Jurídica
-          <a href="/pjregister"> Aqui</a>
+          Quer ser um fornecedor?
+          <a href="/pjregister"> Clique aqui</a>
         </p>
       </form>
     </div>

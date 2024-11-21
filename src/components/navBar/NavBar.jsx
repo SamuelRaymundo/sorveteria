@@ -1,16 +1,17 @@
 import "./NavBar.css";
 
 const NavBar = () => {
-  return (
-    <nav className="nav">
-      <div className="site-title">MySite</div>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/register">Sign In</a></li>
-        <li><a href="/product">Products</a></li>
-      </ul>
-    </nav>
-  );
+
+    return (
+        <nav className="nav">
+            <ul className="nav-links">
+                <li><a href="/">Quem somos</a></li>
+                <li><a href="/register">Crie uma conta</a></li>
+                <li><a href="/product">Nossos produtos</a></li>
+            </ul>
+        </nav>
+    );
 };
 
 export default NavBar;
+
