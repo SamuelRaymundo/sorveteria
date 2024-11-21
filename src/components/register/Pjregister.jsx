@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-const PJRegister = () => {
+const Pjregister = () => {
   const [name, setName] = useState("");
   const [tipoEmpresa, setTipoEmpresa] = useState("");
   const [cnpj, setCnpj] = useState("");
@@ -84,7 +84,7 @@ const PJRegister = () => {
 
   return (
     <div className="register">
-      <h1>Registre-se como Pessoa Juridica</h1>
+      <h1>Seja um fornecedor</h1>
       <form onSubmit={handleSubmit}>
         <label>
           Nome:
@@ -119,12 +119,12 @@ const PJRegister = () => {
         </label>
         <input type="submit" value="Registrar" />
         <p>
-          Registre-se como Pessoa Fisica
-          <a href="/register"> Aqui</a>
+          É um cliente?
+          <a href="/register"> Clique aqui</a>
         </p>
       </form>
     </div>
   );
 };
 
-export default PJRegister;
+export default Pjregister;

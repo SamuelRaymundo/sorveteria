@@ -3,9 +3,9 @@ import './App.css';
 //COMPONENTS
 import NavBar from './components/navBar/NavBar';
 import Home from './components/pages/Home';
-import PJRegister from './components/register/PJRegister';
+import Pjregister from './components/register/Pjregister.jsx';
 import Products from './components/pages/Products';
-import Register from './components/register/Register';
+import Register from "./components/pages/Register.jsx";
 import Footer from './components/footer/Footer';
 
 function App() {
@@ -22,8 +22,8 @@ function App() {
       component = <Products />;
       break;
     case "/pjregister":
-      component = <PJRegister/>;
-      break;  
+      component = <Pjregister/>;
+      break;
   }
 
   return (
