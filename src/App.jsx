@@ -4,7 +4,7 @@ import './App.css';
 import NavBar from './components/navBar/NavBar';
 import Home from './components/pages/Home';
 import Pjregister from './components/register/Pjregister.jsx';
-import Products from './components/pages/Products';
+import Products from "./components/pages/product/Products.jsx";
 import Register from "./components/pages/Register.jsx";
 import Footer from './components/footer/Footer';
 
