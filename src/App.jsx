@@ -2,10 +2,10 @@ import './App.css';
 
 //COMPONENTS
 import NavBar from './components/navBar/NavBar';
-import Home from './components/pages/Home';
-import Pjregister from './components/register/Pjregister.jsx';
+import Home from './components/pages/home/Home.jsx';
+import Pjregister from "./components/pages/register/Pjregister.jsx";
 import Products from "./components/pages/product/Products.jsx";
-import Register from "./components/pages/Register.jsx";
+import PfRegister from "./components/pages/register/PfRegister.jsx";
 import Footer from './components/footer/Footer';
 
 function App() {
@@ -15,10 +15,10 @@ function App() {
     case "/":
       component = <Home />;
       break;
-    case "/register":
-      component = <Register/>;
+    case "/pfregister":
+      component = <PfRegister/>;
       break;
-    case "/product":
+    case "/products":
       component = <Products />;
       break;
     case "/pjregister":
