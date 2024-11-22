@@ -6,8 +6,8 @@ const NavBar = () => {
         <nav className="nav">
             <ul className="nav-links">
                 <li><a href="/">Quem somos</a></li>
-                <li><a href="/register">Crie uma conta</a></li>
-                <li><a href="/product">Nossos produtos</a></li>
+                <li><a href="/pfregister">Crie uma conta</a></li>
+                <li><a href="/products">Nossos produtos</a></li>
             </ul>
         </nav>
     );

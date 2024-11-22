@@ -2,7 +2,7 @@ import '../register/Register.css';
 import axios from "axios";
 import {useState} from "react";
 
-const Register = () => {
+const PfRegister = () => {
   const [name, setName] = useState("");
   const [age, setAge] = useState("");
   const [cpf, setCpf] = useState("");
@@ -124,4 +124,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default PfRegister;

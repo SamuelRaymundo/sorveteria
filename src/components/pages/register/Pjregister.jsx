@@ -120,7 +120,7 @@ const Pjregister = () => {
         <input type="submit" value="Registrar" />
         <p>
           É um cliente?
-          <a href="/register"> Clique aqui</a>
+          <a href="/pfregister"> Clique aqui</a>
         </p>
       </form>
     </div>
