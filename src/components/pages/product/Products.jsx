@@ -9,7 +9,7 @@ const Products = () => {
     {name: "Paçoca", imgUrl: "https://images.tcdn.com.br/img/img_prod/815177/pacoca_1212016_1_20201121193141.jpeg", price: 89},
     {name: "Goiaba", imgUrl: "https://images.tcdn.com.br/img/img_prod/815177/goiaba_sem_lactose_1222003_1_20201006145516.png", price: 59},
     {name: "Queijo Minas", imgUrl: "https://images.tcdn.com.br/img/img_prod/815177/queijo_minas_1322033_1_8e4e8f4e56eb022f3fd639524430942b.png", price: 89},
-    {name: "Milho Verde", imgUrl: "https://images.tcdn.com.br/img/img_prod/815177/milho_verde_1212012_1_20201006230657.png", price: 79},
+    {name: "Chocolate Trufado", imgUrl: "https://images.tcdn.com.br/img/img_prod/815177/chocolate_trufado_com_amendoas_1212006_1_20201006145511.png", price: 79},
     {name: "Café com Brownie", imgUrl: "https://images.tcdn.com.br/img/img_prod/815177/cafe_com_brownie_1212001_1_20201123200851.jpg", price: 89},
     {name: "Caramelo Crocante", imgUrl: "https://images.tcdn.com.br/img/img_prod/815177/caramelo_crocante_1212002_1_20201006145509.png", price: 109}
   ]
